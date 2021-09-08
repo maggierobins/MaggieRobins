@@ -1,83 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maggie Robins HTML Assessment</title>
-</head>
-<body>
-    <h1>Dangerous Animals Adoption Form</h1>
-     <!--warning-->
-     <a href="https://www.bornfreeusa.org/campaigns/animals-in-captivity/the-dangers-of-keeping-exotic-pets/">Before starting, please read this warning about adoping dangerous animals</a>
-     <!--personal information section--->
-    <h4>Please enter your information to let us know if you are a good fit to adopt dangerous animals.</h3>
-    <label for="firstname">First Name:</label>
-    <input type="text" name="firstname" id="First Name" placeholder="First Name">
-    <br>
-    <br>
-    <label for="lastname">Last Name:</label>
-    <input type="lastname" name="lastname" id="Last Name" placeholder="Last Name">
-    <br>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" name="useremail" id="email" placeholder="name@email.com"> 
-    <br>
-    <br>
-    <!--prerequisites list-->
-     <p>In order to adopt one of our animals, you must:</p>
-     <ol>
-         <li>Have ample knowledge about desired pet</li>
-            <ul>
-                <li>Temperature of environment</li>
-                <li>What food they eat</li>
-                <li>How/when to clean living space</li>
-            </ul>
-        <li>Purchase all necessary caretaking equipment</li>
-     </ol>
-     <!--adoption selection--->
-    <h4>Which animal are you planning on adopting?</h4>
-    <label for="EDR">Eastern Diamondback Rattlesnake</label>
-    <input type="radio" id="EDR" name="animal_choice" value="EDR">
-    <br>
-    <img src="https://www.floridamuseum.ufl.edu/wp-content/uploads/sites/116/2020/08/IMG_0405-Eastern-diamondback-rattlesnake-SQ-1-500x347.jpg" alt="Eastern Diamondback Rattlesnake" width="320" height="240">
-    <br>
-    <label for="CM">Crocodile Monitor</label>
-    <input type="radio" id="CM" name="animal_choice" value="CM">
-    <br>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBYRYj--v_K1evhcYAxEji1IY8JCGNgfiesA&usqp=CAU" alt="Crocodile Monitor" width="320" height="240">
-    <br>
-    <label for="M">Monkey</label>
-    <input type="radio" id="M" name="animal_choice" value="M">
-    <br>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGS10DBfWfoJ9wgWcA95GekRpR8D5DlnQgIw&usqp=CAU" alt="Monkey" width="320" height="240">
-    <br>
-    <br>
-     <!--checking for other things--->
-    <h4>Do you already have the necessary caretaking materials for the pet you selected?</h4>
-    <label for="yes">Yes</label>
-    <input type="radio" id="yes" name="prepared_choice" value="yes">
-    <label for="no">No</label>
-    <input type="radio" id="no" name="prepared_choice" value="no">
-    <br>
-    <br>
-     <!--select section--->
-    <h4>How would you rate your caretaking skills for a pet? (On a scale of 1-5):</h4>
-    <select name="skills">
-        <option value="Great">1</option>
-        <option value="Good">2</option>
-        <option value="Fine">3</option>
-        <option value="Bad">4</option>
-        <option value="Horrible">5</option>
-      </select>
-    <br>
-    <br>
-     <!--text box--->
-    <p>Any other comments or questions?</p>
-    <textarea name="name" rows="5" cols="60"></textarea>
-    <br>
-    <br>
-    <input type="submit" name="submit" value="Submit">
+    <!-- STEP 1: Change the title tag to be Your Name -->
+    <title>Maggie Robins</title>
+    <link rel="stylesheet" href="Assessment.css">
+    <!-- STEP 2: INSERT THE BOOTSTRAP 4.6 links here or the Bootstrap 5 CSS link here in the head and the 
+         JavaScript Bundle link right before the closing body tag like it says here 
+         https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  </head>
+  <body>
 
-</body>
+    <nav >
+    <!--STEP 3:  ADD A DARK NAVBAR HERE WITH YOUR NAME IN THE TOP LEFT.  
+        Also, create a link in the navbar TO the HTML file that you made in the HTML assessment -->
+        <nav class="navbar navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Maggie</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="oldindex.html">HTML Assessment</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+    </nav>
+
+    <div class="firstDiv">
+      <!-- Add a class with custom styling to this div -->
+      Hello this is the first div. I am light blue 
+    </div>
+
+    <div class="firstDiv">
+      I am also in the first div. 
+      <!-- Add the same class as before to apply the same styling to this div.
+           ALSO add an id to this div to apply something unique. -->
+      <p id="unique">I am extra special and unique!!!</p>
+    </div>
+
+    <!-- STEP 4: CREATE A PHOTO CAROUSEL HERE -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1630987645153-86c334370286?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" class="d-block w-100" alt="ferns">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1630733498710-4d4155503b75?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" class="d-block w-100" alt="cliff">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1630981097243-0f5db1ee3864?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" class="d-block w-100" alt="stars">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1630687576589-43a3bc515e85?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" class="d-block w-100" alt="ocean">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1609496215052-4288727b7a2b?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" class="d-block w-100" alt="flowers">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <br>
+    <br>
+    <!-- STEP 5: ADD Bootstrap styling to the table below so it has striped rows 
+         and a header row and add at least three more rows. Feel free to change the text.-->
+         <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">A Person's Name</th>
+              <th scope="col">Their Fav Animal that starts with the first letter of their first name</th>
+              <th scope="col"># of toes that animal has</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Maggie</td>
+              <td>Monkey</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Kiyomi</td>
+              <td>Kangaroo Rat</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Ethan</td>
+              <td>Elephant</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+    <br>
+    <br>
+  </body>
 </html>
