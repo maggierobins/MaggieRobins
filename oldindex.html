@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maggie Robins HTML Assessment</title>
+</head>
+<body>
+    <form action="">
+    <h1>Dangerous Animals Adoption Form</h1>
+     <!--warning-->
+     <a href="https://www.bornfreeusa.org/campaigns/animals-in-captivity/the-dangers-of-keeping-exotic-pets/">Before starting, please read this warning about adoping dangerous animals</a>
+     <!--personal information section--->
+    <h4>Please enter your information to let us know if you are a good fit to adopt dangerous animals.</h3>
+    <label for="firstname">First Name:</label>
+    <input type="text" name="firstname" id="First Name" placeholder="First Name">
+    <br>
+    <br>
+    <label for="lastname">Last Name:</label>
+    <input type="lastname" name="lastname" id="Last Name" placeholder="Last Name">
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="useremail" id="email" placeholder="name@email.com"> 
+    <br>
+    <br>
+    <!--prerequisites list-->
+     <p>In order to adopt one of our animals, you must:</p>
+     <ol>
+         <li>Have ample knowledge about desired pet</li>
+            <ul>
+                <li>Temperature of environment</li>
+                <li>What food they eat</li>
+                <li>How/when to clean living space</li>
+            </ul>
+        <li>Purchase all necessary caretaking equipment</li>
+     </ol>
+     <!--adoption selection--->
+    <h4>Which animal are you planning on adopting?</h4>
+    <label for="EDR">Eastern Diamondback Rattlesnake</label>
+    <input type="radio" id="EDR" name="animal_choice" value="EDR">
+    <br>
+    <img src="https://www.floridamuseum.ufl.edu/wp-content/uploads/sites/116/2020/08/IMG_0405-Eastern-diamondback-rattlesnake-SQ-1-500x347.jpg" alt="Eastern Diamondback Rattlesnake" width="320" height="240">
+    <br>
+    <label for="CM">Crocodile Monitor</label>
+    <input type="radio" id="CM" name="animal_choice" value="CM">
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBYRYj--v_K1evhcYAxEji1IY8JCGNgfiesA&usqp=CAU" alt="Crocodile Monitor" width="320" height="240">
+    <br>
+    <label for="M">Monkey</label>
+    <input type="radio" id="M" name="animal_choice" value="M">
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGS10DBfWfoJ9wgWcA95GekRpR8D5DlnQgIw&usqp=CAU" alt="Monkey" width="320" height="240">
+    <br>
+    <br>
+     <!--checking for other things--->
+    <h4>Do you already have the necessary caretaking materials for the pet you selected?</h4>
+    <label for="yes">Yes</label>
+    <input type="radio" id="yes" name="prepared_choice" value="yes">
+    <label for="no">No</label>
+    <input type="radio" id="no" name="prepared_choice" value="no">
+    <br>
+    <br>
+     <!--select section--->
+    <h4>How would you rate your caretaking skills for a pet? (On a scale of 1-5):</h4>
+    <select name="skills">
+        <option value="Great">1</option>
+        <option value="Good">2</option>
+        <option value="Fine">3</option>
+        <option value="Bad">4</option>
+        <option value="Horrible">5</option>
+      </select>
+    <br>
+    <br>
+     <!--text box--->
+    <p>Any other comments or questions?</p>
+    <textarea name="name" rows="5" cols="60"></textarea>
+    <br>
+    <br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>
