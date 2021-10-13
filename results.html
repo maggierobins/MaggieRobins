@@ -9,6 +9,7 @@ page that contains all the code you need for a new page.-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="milestone.css">
   <title>RESULTS</title>
 </head>
 <body>
@@ -16,7 +17,7 @@ page that contains all the code you need for a new page.-->
   <div data-include="nav"></div>
   <!--Whole page container div-->
   <div class="container">
-    <h1 class="display-1 text-center">Results and Answers</h1>
+    <h1 class="display-1 text-center" id="resultstitle">Results and Answers</h1>
     <br>
     <table class="table table-dark">
       <thead>
@@ -61,7 +62,7 @@ page that contains all the code you need for a new page.-->
       </tbody>
     </table>
     <br>
-    <form action="index.html">
+    <form method="get">
       <div>
         <p>Did these results change your views on the wage gap in men's and women's soccer? </p>
         <select class="custom-select">
@@ -73,16 +74,19 @@ page that contains all the code you need for a new page.-->
         <br>
         <br>
         <p>Any other comments/feelings regarding this issue?</p>
-        <input type="text" name="" value="Text goes here">
+        <input type="text" name="" placeholder="Text goes here">
         <br>
         <br>
         <input class="btn btn-primary" type="submit" value="Submit">
         <br>
         <br>
       </div>
-      
-
     </form>
+    <form action="index.html">
+      <button type="submit" class="btn btn-outline-success">Home Page</button>
+    </form>
+    <br>
+    <br>
   </div>
 
   <!--Bootstrap and other JS scripts-->

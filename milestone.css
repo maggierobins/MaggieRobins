@@ -1,9 +1,16 @@
 #title{
     color: rgb(66, 199, 66);
+    font-weight: 500;
 }
 .instructions{
     color: rgb(66, 199, 66);
+    border-width: 10;
 }
 #quiztitle{
     color: rgb(66, 199, 66);
+    font-weight: 500;
+}
+#resultstitle{
+    color: rgb(66, 199, 66);
+    font-weight: 500;
 }
